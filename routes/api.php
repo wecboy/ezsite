@@ -31,4 +31,3 @@ Route::get('/posts', function () {
     $articles = Article::get();
     return response()->json(['status' => 1, 'data' => $articles])->setEncodingOptions(JSON_UNESCAPED_UNICODE);
 });
-//test
